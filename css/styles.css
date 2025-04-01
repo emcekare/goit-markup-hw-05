@@ -51,7 +51,6 @@ ul {
 
 .page-start {
     box-shadow: inset 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
-    position: sticky;
     top: 0;
     background-color: #fff;
     z-index: 999;
@@ -111,6 +110,18 @@ font-weight: 500;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.page-start .container .head-menu .link::after{
+content: '';
+    display: block;
+    height: 4px;
+    width: 100%;
+    position: relative;
+    bottom: -20px;
+    border-radius: 2px;
+    background-color: #404bbf;
 }
 
 
@@ -365,23 +376,28 @@ border: 1px solid rgba(142, 143, 153, 1)
               }
 
 
-              .team-area .icon-list{
-                width: 40px;
-                height: 40px;
-                background-color: #4d5ae5;
-                border-radius: 50%;
-                display: flex;
-                justify-content: center;
-                    align-items: center;      
-                    transition-property: background-color, transform;
-                        transition-duration: 250ms;
-                        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-              }
+
+.team-list .icon-container .icon-list>a{
+  width: 40px;
+        height: 40px;
+        background-color: #4d5ae5;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
 
 
 
 
-.team-list .icon-container :hover {
+
+
+
+.team-list .icon-container .icon-list :hover {
         background-color: #404bbf;
 }
 
@@ -583,7 +599,10 @@ transition-property: box-shadow;
 }
 
 
-.page-finish .icon-list{
+
+
+
+.page-finish .icon-list>a{
     width: 40px;
     height: 40px;
     background-color: #4d5ae5;
@@ -596,7 +615,7 @@ transition-property: background-color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
          }
 
-.page-finish .icon-list:hover {
+.page-finish .icon-list>a:hover {
     background-color: #31d0aa;
 }
 
