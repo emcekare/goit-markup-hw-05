@@ -634,6 +634,7 @@ transition-property: background-color;
     border: none;
     display: flex;
     justify-content: center;
+    gap: 16px;
     align-items: center;
     margin: 0 auto;
         width: 165px;
