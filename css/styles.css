@@ -679,7 +679,64 @@ font-size: 12px;
 }
 
 
-
-
 /* Footer Bitti */
 
+
+
+/* MODAL ALANI */
+
+
+.modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 998;
+    margin: 0 auto;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.modal-content{
+       margin: 0 auto;
+       border-radius: 4px;
+        width: 408px;
+        height: 584px;
+    padding: 24px;
+    background-color:#fcfcfc ;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+.modal-content>label {
+    font-weight: 400;
+        font-size: 12px;
+        line-height: 117%;
+        letter-spacing: 0.04em;
+        color: #8e8f99;
+}
+
+
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-content .modal-close{
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+border-radius: 100%;
+background-color: #e7e9fc;
+    stroke-width: 1px;
+    stroke: rgba(0, 0, 0, 0.1);
+    fill: #2e2f42;
+    
+}
+
+.modal-close .cross-button {
+    width: 8px;
+    height: 8px;     
+}
